@@ -6,9 +6,8 @@ import b4a from 'b4a'
 const swarm = new Hyperswarm()
 
 const conns = []
-swarm.on('connection', (socket, peerInfo) => {
-  console.log('socket', socket);
-  console.log('peerInfo', peerInfo)
+swarm.on('connection', (conn) => {
+  console.log('socket', conn);
 })
 
 // Join a common topic
